@@ -72,7 +72,7 @@ export const FileUpload: React.FC<Props> = ({ onFile, loading }) => {
               disabled={loading || loadingTrail !== null}
               onClick={() => handleSampleClick(trail.file)}
             >
-              <span className="sample-trail-icon">🗻</span>
+              
               <span className="sample-trail-label">
                 {loadingTrail === trail.file ? "Loading…" : trail.label}
               </span>
@@ -96,7 +96,7 @@ export const FileUpload: React.FC<Props> = ({ onFile, loading }) => {
               disabled={loading}
               hidden
             />
-            <span className="upload-icon">📂</span>
+            
             <span>{loading ? "Processing…" : "Or drop a .GPX file here / click to browse."}</span>
           </label>
         </div>
