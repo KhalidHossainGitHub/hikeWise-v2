@@ -7,7 +7,7 @@
 <p align="center">
   <img width="932" alt="HikeWise Preview" src="public\hikeWise-preview.png">
   <br>
-  <b>Figure 1: Uploading a GPX route and exploring color-coded difficulty segments on the 3-D satellite map.</b>
+  <b>Figure 1: HikeWise Preview Design</b>
 </p>
 
 ## Project Overview
