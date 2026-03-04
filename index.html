@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/hikeWise-clearSphere.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>hikeWise</title>
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v3.9.4/mapbox-gl.css"
+      rel="stylesheet"
+    />
+    <style>
+      /* Splash screen – visible until React removes it */
+      #splash {
+        position: fixed;
+        inset: 0;
+        z-index: 9999;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #000;
+        transition: opacity 0.4s ease;
+      }
+      #splash.hidden {
+        opacity: 0;
+        pointer-events: none;
+      }
+      .splash-logo {
+        width: 160px;
+        height: 160px;
+        object-fit: contain;
+        animation: pulse 1.6s ease-in-out infinite;
+      }
+      @keyframes pulse {
+        0%, 100% { transform: scale(1); }
+        50%      { transform: scale(0.88); }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Splash / loading screen (removed once React mounts) -->
+    <div id="splash">
+      <img src="/hikeWise-clearSphere.png" alt="HikeWise" class="splash-logo" />
+    </div>
+
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

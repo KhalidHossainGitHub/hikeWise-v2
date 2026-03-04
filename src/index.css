@@ -1,0 +1,32 @@
+/* ── Reset / Base ──────────────────────────────────── */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg: #000000;
+  --surface: #111111;
+  --surface-hover: #1a1a1a;
+  --text: #f1f5f9;
+  --text-muted: #94a3b8;
+  --accent: #70d87c;
+  --radius: 10px;
+  --shadow: 0 2px 12px rgba(0, 0, 0, 0.6);
+  font-family: "Inter", system-ui, -apple-system, sans-serif;
+  color-scheme: dark;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+}
